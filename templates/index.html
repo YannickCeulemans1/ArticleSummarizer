@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <title>Text summarization</title>
+{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <header>
+            <p>Learn together, share together</p>
+            <div id="line"></div>
+            <h1>A use case</h1>
+        </header>
+        <section>
+            <p>
+                Welcome to the Natural Language Processing section. 
+                It is one of the hottest technology of the moment and is often defined with those words: 
+                NLP gives the machines the ability to read, understand and derive meaning from human languages. 
+                However, how does it work and how can it be useful?
+            </p>
+            <p>
+                There are so many ways to express yourself verbally or in written, 
+                whether you might use certain words, a different tone, or even sometimes particular expressions. 
+                The difficulty in NLP is not to generate data, it is how we can analyse those unstructured data. 
+                Thanks to new advanced techniques (such as transformers), 
+                it becomes easier and easier to use machines to understand humans by understanding the meaning behind those words (the cognitive way).
+            </p>
+            <p>
+                Would you like to generate text summarizations automatically? <br>
+                Find an article to be summarized on one of the following news sites: <a href="https://www.bbc.com/news" target="_blank">BBC news</a>, <a href="https://www.cnn.com/" target="_blank">CNN</a>, <a href="https://www.cnbc.com/" target="_blank">CNBC</a>
+            </p>
+        </section>
+        <section>
+            <form id="form">
+                <label for="link">Url:</label>
+                <input type="url" id="link" name="link">
+                <br>
+                <p id="validation"></p>
+            </form>
+            <div>
+                <button id="summarize">Summarize</button>
+            </div>
+            <div id="sumDiv">
+                <div id="loaderDiv" >
+                    Generating summarization
+                    <br>
+                    <div class="loader"></div>
+                </div>
+                <h1 id="headingField">
+
+                </h1>
+                <p id="summarizationField">
+    
+                </p>
+            </div>
+           
+        </section>
+        
+    </div>
+{% endblock %}

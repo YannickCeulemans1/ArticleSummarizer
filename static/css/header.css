@@ -1,0 +1,23 @@
+/* Header */
+header p {
+    font-size: 12px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .25rem;
+    color: #999;
+}
+header #line {
+    padding: 0 ;
+    margin: 0 auto;
+    text-align: center;
+    
+    width: 275px;
+    border-bottom: 1px solid #DEDFDE;
+}
+header h1 {
+    margin-top: 5px;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+}

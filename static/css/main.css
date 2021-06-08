@@ -1,0 +1,83 @@
+html, body {
+    background-color: #F1F2F1 !important;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0;
+    background-color: #F1F2F1;
+    padding: 60px 35px;
+}
+
+.content {
+    background-color: white;
+    padding: 35px;
+}
+
+/* Content */
+
+.content section p {
+    color: #A6A6A6;
+    font-size: 16px;
+    vertical-align: baseline;
+    text-align: justify;
+}
+
+.content section p a {
+    color: #A6A6A6;
+    font-size: 16px;
+    vertical-align: baseline;
+}
+
+.content form {
+    text-align: center;
+}
+
+.content form label{
+    color: #A6A6A6;
+}
+
+.content form input{
+    width: 200px;
+}
+
+.content div {
+    text-align: center;
+}
+
+.content div button{
+    background-color: transparent;
+    color: black;
+    border-radius: 2px;
+    border: 2px solid #DEDFDE;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.85rem;
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content div button:hover{
+    background-color: #F1F2F1;
+}
+
+#validation{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    color: red;
+}
+
+#sumDiv {
+    display: none;
+    margin-top: 25px;
+    padding: 25px;
+    border: 5px solid #DEDFDE;
+}
