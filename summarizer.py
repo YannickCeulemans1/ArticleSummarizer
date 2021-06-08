@@ -64,7 +64,7 @@ def predictSummary(articleLink):
             #variabelen defineren
             model_file = "data/logisticRegression_model.pickle"
             article_file = "data/article.txt"
-            nlp = spacy.load("en_core_web_sm")
+            nlp = spacy.load("en_core_web_lg")
             embedder = SentenceTransformer('distilbert-base-nli-mean-tokens')
         except:
             response = {
