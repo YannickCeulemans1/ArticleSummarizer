@@ -1,5 +1,33 @@
-Warnings from top US intelligence agencies about the risk of an armed assault on the Capitol in Washington failed to reach police in time, a report by two Senate committees found.
-Five people died when supporters of former US President Donald Trump stormed Congress on 6 January. 
-The Senate report pointed to failures in communications and intelligence. 
-The Capitol police force drew fierce criticism as slow and ineffective in its response to the violence. 
-The report does not discuss the role of Donald Trump in the riots.
+China hands out at least twice as much development money as the US and other major powers, new evidence shows, with most of it coming in the form of risky high-interest loans from Chinese state banks. 
+The sheer amount of Chinese lending is startling. Not too long ago China received foreign aid, but now the tables have turned. 
+Over an 18-year period, China has granted or loaned money to 13,427 infrastructure projects worth $843bn across 165 countries, according to the AidData research lab at William & Mary, a university in the US state of Virginia. 
+Much of this money is linked to Chinese President Xi Jinping's ambitious Belt and Road strategy. Starting in 2013, it leverages China's expertise in infrastructure projects, and ample foreign currency, to build new global trading routes.
+However, critics fear that the high-interest loans funding many Chinese projects are saddling unsuspecting populations in sky-high debt.
+And that's news even to Chinese officials themselves. The AidData researchers - who have spent four years tracing all of China's global lending and spending - say that Chinese government ministries are regularly going to them for information on how Chinese money is being used overseas.
+"We hear from public officials in China all the time, saying 'Look, you're in the only game in town'," explains Brad Parks, executive director of AidData. "They say: 'We can't get our hands on this data internally'."
+A twisting railway running between China and the neighbouring country of Laos is often touted as a prime example of China's off-the-books lending. 
+For decades, politicians wondered about building such a connection - linking landlocked south-west China directly to South East Asia. 
+However, engineers warned the cost would be prohibitive: tracks would need to run through steep mountains, requiring dozens of bridges and tunnels. Laos is one of the poorest countries in the region and couldn't afford even a fraction of the cost. 
+Enter China's ambitious bankers: with backing from a group of Chinese state companies and a consortium of Chinese state lenders, the $5.9bn railway is set to begin operations in December. 
+However, Laos had to take out a $480m loan with a Chinese bank to fund its small part of the equity. One of Laos' few sources of profit, the proceeds of its potash mines, were used to back the massive loan. 
+"The loan that China's Eximbank made to cover part of the equity really showcases the urgency of the Chinese state to push through the project," explains Wanjing Kelly Chen, research assistant professor at the Hong Kong University of Science and Technology. 
+Most of the line is owned by the Chinese-dominated railway group, but under the murky terms of the deal, the Laotian government is ultimately responsible for the railway's debt. The imbalanced deal has led international creditors to downgrade Laos' credit rating to "junk" status. 
+In September 2020, on the brink of bankruptcy, Laos sold a major asset to China, handing over part of its energy grid for $600m in order to seek debt relief from Chinese creditors. And this is all before the railway has even begun operations. 
+The Laos railway is far from the only risky project that Chinese state banks have funded - and yet, AidData says China remains the financier of first resort for many low and middle income countries. 
+"In an average year, China's international development finance commitments amount to about $85bn. And by comparison, the US is spending about $37bn in any given year to support global development activities," says Brad Parks.
+China has vastly outpaced all other countries in development financing, but the way in which Beijing has reached that level is "extraordinary", AidData says. 
+In the past, Western countries were guilty of dragging African countries in particular into debt. China is lending differently: instead of financing projects by granting or loaning money from one state to another, almost all the money it's handing out is in the form of state banking loans. 
+Such loans don't show up in official accounts of government debt. That's because central government institutions aren't named in a lot of the deals struck by Chinese state banks, keeping such deals off government balance sheets and hidden by confidentiality clauses that can prevent governments from knowing exactly what has been agreed behind closed doors. 
+AidData tallied underreported debt amounting to $385bn.
+Many Chinese state developments loans also demand unusual forms of collateral. Increasingly, Chinese loans appear to require borrowers to promise hard cash earned from selling natural resources. 
+A deal with Venezuela, for example, demands the Venezuelan borrower deposit the foreign currency earned by selling oil directly into a bank account controlled by China. If a debt payment is missed, the Chinese lender can immediately withdraw the cash waiting in the account.
+"It really seems like kind of a bread-and-butter strategy they use to signal to their borrower that 'We're the big boss around here'," Brad Parks explains. "Their message is: 'You're going to repay us before anyone else because we're the only ones asking for this prized possession'. 
+"[That is] income for these very poor countries, dollars and euros, to lock those up in an offshore account that's controlled by a foreign power."
+"Is China being smart?" wonders Anna Gelpern, a Georgetown law professor who was involved in an AidData study earlier this year examining Chinese development loan contracts. "I think our conclusion is that they were being muscular and sophisticated in these contracts. They're very much protecting their interests."
+Countries can be difficult borrowers, Gelpern explains, and it's not practical to expect them to hand over a physical asset like a port if they're unable to pay their debts. 
+China might soon face some international lending competition. At a G7 meeting in June, the US and its allies announced the G7 adopts spending plan to rival China's influence, which promises to fund global infrastructure projects that are financially and environmentally sustainable. 
+However, the plan might simply have come along too late.
+"I'm sceptical that Western initiatives will make much of a dent in the Chinese programme," says David Dollar, senior fellow at the Brookings Institution and the former US Treasury representative in China. 
+"[Those new initiatives] will not have enough real money to address the scale of infrastructure needs in the developing world. Also, working with Western official financiers is bureaucratic and subject to long delays."
+The AidData researchers found that the Belt and Road project is facing its own issues. BRI projects were more likely to be associated with corruption, labour scandals or environmental issues than other Chinese development deals. 
+In order to keep the BRI on track, researchers say, Beijing will have no choice but to address borrowers' concerns.

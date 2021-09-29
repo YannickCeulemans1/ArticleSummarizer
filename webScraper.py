@@ -6,17 +6,19 @@ import json
 def webScraping(articleLink):
     f = open("data/article.txt", "w")
 
-    # webpagina link ophalen
+    # Webpagina link ophalen
     response = {}
     websites = ["bbc.com/news", "cnbc", "cnn.com"]
     usedWebsite = ""
     heading = ""
    
+   # Kijken van welke nieuws website de link is
     for website in websites:
         if(articleLink.find(website) != -1):
             usedWebsite = website
             req = Request(articleLink, headers={'User-Agent': 'Chrome'})
 
+    # Error response sturen als de link van een verkeerde website is
     if usedWebsite == "":
         response = {
             "status":False,
@@ -26,10 +28,9 @@ def webScraping(articleLink):
 
     
     try: 
-        # webpagina lezen en omvormen door html parser steken
+        # webpagina lezen en omvormen door html parser 
         webpage = urlopen(req).read()
         soup = BeautifulSoup(webpage, features="html.parser")
-        print("")
 
         if(usedWebsite == "bbc.com/news"):
             # de tekst uit de webpagina halen en wegschrijven
@@ -42,7 +43,7 @@ def webScraping(articleLink):
                 f.write("\n")       
 
         if(usedWebsite == "cnbc"):
-            #de tekst uit de webpagina halen en wegschrijven
+            # de tekst uit de webpagina halen en wegschrijven
             heading = soup.find('h1',attrs={'class':'ArticleHeader-headline'}).text
             divs = soup.find_all('div',attrs={'class':'group'})
             
@@ -72,12 +73,14 @@ def webScraping(articleLink):
             return response
             
     except:
+        # Error response bij een fout doorsturen 
         response = {
             "status":False,
             "message":"Something went wrong retrieving the article"
         }
         return response 
     
+    # Succes response doorsturen
     response = {
         "status":True,
         "heading": heading,

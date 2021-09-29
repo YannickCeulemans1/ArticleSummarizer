@@ -14,7 +14,7 @@ def getSummary():
         data = request.get_data()
         articleLink = data.decode("utf-8")
         
-        return predictSummary(articleLink)
+        return predictSummary(articleLink, 5, 3, 8)
     
     
 if __name__ == '__main__':
