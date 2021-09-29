@@ -19,4 +19,8 @@ Wanneer er iets fout gaat in het webscraper programma zal deze foutmelding getoo
 #### Functie attributen 
 articleLink = De webpagina link van het artikel waarvan de samenvatting moet genereerd worden.
 
+## Model 
+In de map "data" zit het bestand "logisticRegression_model.pickle". Dit is het getrained logistic regression model.  
+
+
 
