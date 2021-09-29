@@ -33,15 +33,11 @@ def get_pred_sum(text_clean, y_pred, thresh, amount):
     for i in range(len(y_pred)):
         if y_pred[i][0] > thresh:
             sentenceScoreList.append(y_pred[i][0])
-    
-    #print(sentenceScoreList)
             
     predSentenceScoreIndexList =  sorted( [(x,i) for (i,x) in enumerate(sentenceScoreList)], reverse=True )[:amount]
     predSentenceIndexList = []
     for item in predSentenceScoreIndexList:
         predSentenceIndexList.append(item[1])
-    
-    #print(predSentenceIndexList)
 
     summarySentenceList = []
     for index in sorted(predSentenceIndexList):
@@ -54,14 +50,16 @@ def get_pred_sum(text_clean, y_pred, thresh, amount):
     
     return summary
             
-def predictSummary(articleLink):
-    # Webscraping functie uitvoeren die de tekst uit een gegeven link haalt
+def predictSummary(articleLink, ArticleSumRatio, minSumLen, maxSumLen):
+
+
+    # Webscraping functie uitvoeren die de tekst uit de gegeven link haalt
     webscraper = webScraping(articleLink)
 
     if webscraper["status"] == True:
 
+        # Variabelen defineren en modellen ophalen
         try:
-            #variabelen defineren
             model_file = "data/logisticRegression_model.pickle"
             article_file = "data/article.txt"
             nlp = spacy.load("en_core_web_lg")
@@ -73,16 +71,18 @@ def predictSummary(articleLink):
             }
             return response 
         
+        # Nodige data uit artikel halen en formateren van deze data
         try:
-            #articel inlezen
+            # Artikel inlezen
             article = open(article_file).read()
 
             # Een lijst met elke zin in en een lijst met embeddings van elke zin aanmaken
             text_clean, text_embedding = text_to_sent_list(article, nlp, embedder)
 
-            #De betekenis van de volledige tekst berekenen en uitdruikken in een vector
+            # De betekenis van de volledige tekst berekenen en uitdruikken in een vector
             doc_mean = text_embedding.mean(axis=0).reshape(1,-1)
 
+            # Formateren
             X = np.hstack((text_embedding[0].reshape(1,-1), doc_mean))
             for i in range(1, len(text_embedding)):
                 X_new = np.hstack((text_embedding[i].reshape(1,-1), doc_mean))
@@ -95,17 +95,19 @@ def predictSummary(articleLink):
             }
             return response 
 
+        # De sammenvatting genereren 
         try:
-            # getrain model ophalen
+            # Getrained model ophalen
             model = pickle.load(open(model_file, 'rb'))
 
             y_pred = model.predict_proba(X)
 
-            sentenceAmount = round(len(y_pred) / 5)
-            if sentenceAmount < 3:
-                sentenceAmount = 3
-            if sentenceAmount > 8:
-                sentenceAmount = 8
+            # Lengte van samenvatting bepalen afhankelijk van artikel lengte 
+            sentenceAmount = round(len(y_pred) / ArticleSumRatio)
+            if sentenceAmount < minSumLen:
+                sentenceAmount = minSumLen
+            if sentenceAmount > maxSumLen:
+                sentenceAmount = maxSumLen
 
             predictedSummary = get_pred_sum(text_clean, y_pred, 0.50, sentenceAmount)
 
